@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 import { HttpClientModule } from '@angular/common/http';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AccountArchivedAdsComponent } from './account-archived-ads/account-archived-ads.component';
@@ -40,7 +41,7 @@ import { JobListComponent } from './job-list/job-list.component';
 import { JobLoginComponent } from './job-login/job-login.component';
 import { JobPostComponent } from './job-post/job-post.component';
 import { JobSignupComponent } from './job-signup/job-signup.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponentt } from './login/login.component';
 import { PostAdsComponent } from './post-ads/post-ads.component';
 import { PostingSuccessComponent } from './posting-success/posting-success.component';
 import { PropertyDetailsComponent } from './property-details/property-details.component';
@@ -50,6 +51,9 @@ import { SignupComponent } from './signup/signup.component';
 import { StatementsComponent } from './statements/statements.component';
 import { SubCategoryComponent } from './sub-category/sub-category.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { CommonModule }   from '@angular/common';
+import { AuthModule } from './auth/auth.module';
+
 
 @NgModule({
   declarations: [
@@ -87,7 +91,7 @@ import { TermsConditionsComponent } from './terms-conditions/terms-conditions.co
     JobLoginComponent,
     JobPostComponent,
     JobSignupComponent,
-    LoginComponent,
+    
     PostAdsComponent,
     PostingSuccessComponent,
     PropertyDetailsComponent,
@@ -100,11 +104,13 @@ import { TermsConditionsComponent } from './terms-conditions/terms-conditions.co
     
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    
+    CommonModule,
     HttpClientModule,
+    AuthModule
     
   ],
   providers: [],

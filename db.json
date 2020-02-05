@@ -1,0 +1,14 @@
+{
+   
+
+    "users":[
+        {"id":1,"name":"Minas","surname":"Minasyan","email":"m@mail.ru","password":"p"},
+        {"id":2,"name":"Minas2","surname":"Minasyan2","email":"m1@mail.ru","password":"p"},
+        {"id":3,"name":"Minas3","surname":"Minasyan3","email":"m2@mail.ru","password":"p"}
+    ],
+    "posts":[
+        {"userId":1,"name":"bmw","model":"e46","price":"5000"},
+        {"userId":1,"name":"mers","model":"e350","price":"8000"},
+        {"userId":1,"name":"audi","model":"a6","price":"4000"}
+    ]
+  }
